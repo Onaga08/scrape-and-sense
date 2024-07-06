@@ -15,6 +15,7 @@ The workflow includes scripts for data extraction, stop word removal, and analys
 Put the following command in your terminal/cmd after traversing to the designated folder
 
 ```bash
+git clone https://github.com/Onaga08/scrape-and-sense.git
 ```
 This repository uses several Python libraries and dependencies. Install all requirements through the command below.
 
@@ -30,12 +31,12 @@ This project has two broad functions:
 
 The runnables along with the required input and expected output of each python file is explained in [instructions.md](instructions.md)
 
-## Pre-Requisite Directories/Files
+# Pre-Requisite Directories/Files
 1. Input.xlsx - Contains link for articles hosted on BlackCoffer website.
 2. Dict/ - Contains txt files for positive-words and negative-words analysis
 3. Stop Words/ - Contains txt files of three different types of Stop_Words
 
-## Project Workflow
+# Project Workflow
 
 ```mermaid
 graph TD
@@ -47,3 +48,10 @@ graph TD
     E -->|rmv_StopWords.py| F[updated_text_files directory]
     F -->|Analysis.py + output.py| G[output.csv]
 ```
+
+# Detailed Analysis
+
+For detailed information on the formulas and logic used in the NLP analysis, please refer to the [ANALYSIS_DETAILS.md](Analysis_Details.md) file.
+
+
+### License is attached
