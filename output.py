@@ -12,7 +12,7 @@ sort_csv(file2, file2)
 
 file1_path = 'Input.csv'
 file2_path = 'Analysis.csv'
-output_path = 'final_output.csv'
+output_path = 'Analysis.csv'
 
 compare_to_overwrite(file1_path, file2_path, output_path)
 
