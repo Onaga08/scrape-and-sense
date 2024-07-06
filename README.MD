@@ -35,3 +35,15 @@ The runnables along with the required input and expected output of each python f
 2. Dict/ - Contains txt files for positive-words and negative-words analysis
 3. Stop Words/ - Contains txt files of three different types of Stop_Words
 
+## Project Workflow
+
+```mermaid
+graph TD
+    A[Input.csv] -->|main.py| B[text_files directory]
+    B -->|check.py| C{Articles with < 3 lines?}
+    C -->|Yes| D[Error in data extraction]
+    D -->A
+    C -->|No| E[text_files directory]
+    E -->|rmv_StopWords.py| F[updated_text_files directory]
+    F -->|Analysis.py + output.py| G[output.csv]
+```
