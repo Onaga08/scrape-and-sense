@@ -7,8 +7,8 @@ import pandas as pd
 #Before anything, for the ease of further processing, I will convert the input.xlsx file 
 #into a .csv file.
 def convert_xlsx_to_csv():
-    df = pd.read_excel('Input.xlsx')
-    df.to_csv('Input.csv', index=False)
+    df = pd.read_excel('../Input.xlsx')
+    df.to_csv('../Input.csv', index=False)
 
 #Parsing Function to extract text
 def extract_article_heading_and_body(url):
@@ -44,9 +44,9 @@ def extract_article_heading_and_body(url):
 convert_xlsx_to_csv()
 
 #Created a directory
-output_directory = 'text_files'
+output_directory = '../text_files'
 os.makedirs(output_directory, exist_ok=True)
-csv_filename = 'Input.csv'
+csv_filename = '../Input.csv'
 
 with open(csv_filename, 'r', newline='') as csvfile:
     csvreader = csv.reader(csvfile)

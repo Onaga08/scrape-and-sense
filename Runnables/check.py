@@ -3,7 +3,7 @@
 import os
 import chardet
 
-directory = 'text_files'
+directory = '../text_files'
 for filename in os.listdir(directory):
     if filename.endswith('.txt'):
         file_path = os.path.join(directory, filename)

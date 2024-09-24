@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "scrape-and-sense"
+version = "0.1.0"
+description = "Scrape Articles and perform NLP Analysis"
+authors = ["Pradyumn Prakash Srivastava"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+numpy = "^2.1.1"
+nltk = "^3.9.1"
+chardet = "^5.2.0"
+requests = "^2.32.3"
+bs4 = "^0.0.2"
+openpyxl = "^3.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

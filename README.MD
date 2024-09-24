@@ -21,6 +21,14 @@ This repository uses several Python libraries and dependencies. Install all requ
 
 ```bash
 pip install -r requirements.txt
+cd Runnables
+```
+or 
+use poetry for dependencies management
+
+```python
+cd Runnables
+poetry run python <filename>
 ```
 
 ## Usage
@@ -32,6 +40,7 @@ This project has two broad functions:
 The runnables along with the required input and expected output of each python file is explained in [instructions.md](instructions.md)
 
 # Pre-Requisite Directories/Files
+1. Poetry Should be installed - for dependency management
 1. Input.xlsx - Contains link for articles hosted on BlackCoffer website.
 2. Dict/ - Contains txt files for positive-words and negative-words analysis
 3. Stop Words/ - Contains txt files of three different types of Stop_Words
